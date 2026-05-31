@@ -17,7 +17,7 @@
                                                 // GEN_1/2/3/4/5/6/7: Yellow, Crystal, RSE, HGSS, B2W2, ORAS, USUM learnsets respectively.
                                                 // GEN_8: Use the following priority: BDSP for Gen1-4 Pokémon, then LA for species introduced in that game, then SwSh for species present in those games. Otherwise, use GEN_7.
                                                 // GEN_9: SV For species present in those games. Otherwise use GEN_8.
-#define P_EVOLUTION_LEVEL_1_LEARN   GEN_LATEST  // Since Gen 8, Pokémon evolving while at level 1 do not get the chance to learn their level 1 moves, while before they did.
+#define P_EVOLUTION_LEVEL_1_LEARN   GEN_7       // Since Gen 8, Pokémon evolving while at level 1 do not get the chance to learn their level 1 moves, while before they did.
 
 // Evolution settings
 #define P_FRIENDSHIP_EVO_THRESHOLD   GEN_LATEST  // Since Gen 8, Pokémon that evolve by friendship evolve at or above 160 friendship instead of 220.
@@ -27,7 +27,7 @@
 #define P_INCENSE_BREEDING             GEN_LATEST                // Since Gen 9, cross-generation Baby Pokémon don't require Incense being held by the parents to be obtained via breeding.
 #define P_EGG_HATCH_LEVEL              GEN_LATEST                // Since Gen 4, Pokémon will hatch from Eggs at level 1 instead of 5.
 #define P_BALL_INHERITING              GEN_LATEST                // Since Gen 6, Eggs from the Day Care will inherit the Poké Ball from their mother. From Gen 7 onwards, the father can pass it down as well, as long as it's of the same species as the mother.
-#define P_TM_INHERITANCE               GEN_LATEST                // Since Gen 6, the father no longer passes down TMs to the baby.
+#define P_TM_INHERITANCE               GEN_3                     // Since Gen 6, the father no longer passes down TMs to the baby.
 #define P_MOTHER_EGG_MOVE_INHERITANCE  GEN_LATEST                // Since Gen 6, the mother can also pass down Egg Moves.
 #define P_NATURE_INHERITANCE           GEN_LATEST                // In Gen 3, Everstone grants Ditto and mothers a 50% chance to pass on Nature. Since Gen 4, anyone can pass on a Nature. Since Gen 5, the chance is 100%.
 #define P_ABILITY_INHERITANCE          GEN_LATEST                // In B2W2, a female Pokémon has an 80% chance of passing down their Ability if bred with a male. Since Gen 6, the chance is 80% for regular Ability and 60% for Hidden Ability, and anyone can pass down their Abilities if bred with Ditto. NOTE: BW's effect: 60% chance to pass down HA and random for regular Ability has been omitted.
@@ -55,12 +55,12 @@
 #define P_EV_CAP                         GEN_LATEST  // Since Gen 6, the max EVs per stat is 252 instead of 255.
 #define P_SHOW_TERA_TYPE                 GEN_8       // Since Gen 9, the Tera Type is shown on the summary screen.
 #define P_TM_LITERACY                    GEN_LATEST  // Since Gen 6, TM illiterate Pokémon can learn TMs that teach moves that are in their level-up learnsets.
-#define P_CAN_FORGET_HIDDEN_MOVE         FALSE       // If TRUE, Pokémon can forget any move, even if it is an HM.
+#define P_CAN_FORGET_HIDDEN_MOVE         TRUE        // If TRUE, Pokémon can forget any move, even if it is an HM.
 #define P_ASK_MOVE_CONFIRMATION          FALSE       // If FALSE, when a player decides not to learn a move, the game does not ask the player for confirmation.
 #define P_EGG_CYCLE_LENGTH               GEN_LATEST  // Since Gen 8, Egg cycles take half as many steps as before. Previous generations have some varied step counts around 255.
-#define P_ONLY_OBTAINABLE_SHINIES        FALSE       // If TRUE, Pokémon encountered in the Battle Pyramid or while catching is disabled won't be Shiny.
-#define P_NO_SHINIES_WITHOUT_POKEBALLS   FALSE       // If TRUE, Pokémon encountered when the player is out of Poké Balls won't be Shiny.
-#define P_SHOW_DYNAMIC_TYPES             FALSE       // If TRUE, all moves with dynamic type changes will be reflected as their current type in battle/summary screens instead of just select ones like in vanilla.
+#define P_ONLY_OBTAINABLE_SHINIES        TRUE        // If TRUE, Pokémon encountered in the Battle Pyramid or while catching is disabled won't be Shiny.
+#define P_NO_SHINIES_WITHOUT_POKEBALLS   TRUE        // If TRUE, Pokémon encountered when the player is out of Poké Balls won't be Shiny.
+#define P_SHOW_DYNAMIC_TYPES             TRUE        // If TRUE, all moves with dynamic type changes will be reflected as their current type in battle/summary screens instead of just select ones like in vanilla.
 #define P_BASE_HP_1_SHEDINJA_HANDLING    FALSE       // If TRUE, all species with 1 Base HP will have their handling match Shedinja's.
 
 // Learnset helper toggles

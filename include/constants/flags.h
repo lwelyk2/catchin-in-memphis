@@ -51,13 +51,13 @@
 
 #else
 
-#define FLAG_UNUSED_0x020    0x20 // Unused Flag
-#define FLAG_UNUSED_0x021    0x21 // Unused Flag
-#define FLAG_UNUSED_0x022    0x22 // Unused Flag
-#define FLAG_UNUSED_0x023    0x23 // Unused Flag
-#define FLAG_UNUSED_0x024    0x24 // Unused Flag
-#define FLAG_UNUSED_0x025    0x25 // Unused Flag
-#define FLAG_UNUSED_0x026    0x26 // Unused Flag
+#define FLAG_INVERSE_BATTLE  0x20 
+#define FLAG_AI_VS_AI_BATTLE 0x21
+#define FLAG_NO_WHITEOUT     0x22
+#define FLAG_EXP_SHARE       0x23
+#define FLAG_LAST_REPEL_USED 0x24
+#define FLAG_HIDE_FOLLOWERS  0x25
+#define FLAG_FREEZE_TIME     0x26
 #define FLAG_UNUSED_0x027    0x27 // Unused Flag
 #define FLAG_UNUSED_0x028    0x28 // Unused Flag
 #define FLAG_UNUSED_0x029    0x29 // Unused Flag
