@@ -37,13 +37,14 @@
 #define I_REPEL_LURE_MENU           TRUE                       // If TRUE, the player is able to choose which Repel/Lure to use once the previous one runs out. Cursor position is saved by VAR_LAST_REPEL_LURE_USED if not 0.
 
 // Vs. Seeker
-#define I_VS_SEEKER_CHARGING        0                     // If this flag is assigned, the Vs Seeker functionality will be enabled. When the player has the Vs. Seeker, Match Call rematch functions will stop working. Documentation for the Vs. Seeker can be found in docs/tutorials/vs_seeker.md.
+#define I_VS_SEEKER_CHARGING        0                     // If this flag is assigned, the Vs. Seeker functionality will be enabled. When the player has the Vs. Seeker, Match Call rematch functions will stop working. Documentation for the Vs. Seeker can be found in docs/tutorials/vs_seeker.md.
 #define I_SHOW_NO_ID_TRAINER        DISABLED_ON_RELEASE   // If TRUE, object events with a trainer type but no visible trainer id will be shown with a question mark. You may want to add vsseeker_rematchid TRAINER_ID as the top of the script to let the VS seeker know what reaction it's supposed to show.
 
 // ORAS Dowsing Machine
-#define I_ORAS_DOWSING_FLAG         0           // Replace 0 with an unused flag to enable the Dowsing Machine mechanic from ORAS.
-#define I_ORAS_DOWSING_SOUNDS       TRUE        // If TRUE, the Dowsing Machine will make sounds based on how far away the hidden item is.
-#define I_ORAS_DOWSING_COLOR_PAL    15          // The color within the palette that will change based on proximity to the item.
+#define I_ORAS_DOWSING_FLAG         0       // Replace 0 with an unused flag to enable the Dowsing Machine mechanic from ORAS.
+#define I_ORAS_DOWSING_SOUNDS       TRUE    // If set to TRUE, the Dowsing Machine will make sounds based on how far away the hidden item is.
+#define I_ORAS_DOWSING_COLOR_PAL    15      // The color within the palette that will change based on proximity to the item.
+
 // Color values for the ORAS dowsing distances/anims
 #define I_ORAS_DOWSING_COLOR_NONE   RGB_GRAY
 #define I_ORAS_DOWSING_COLOR_SLOW   RGB2GBA(56, 120, 255)
